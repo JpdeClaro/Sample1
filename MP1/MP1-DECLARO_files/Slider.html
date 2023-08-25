@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="Slider.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-Canvas Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .off-canvas {
+            position: fixed;
+            top: 0;
+            right: -280px;
+            width: 250px;
+            height: 100%;
+            background-color: #f2ead380;
+            padding: 20px;
+            color: #fff;
+            transition: right 0.3s;
+        }
+        
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            color: #333;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+    <div class="off-canvas" id="offCanvas">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const offCanvas = document.getElementById('offCanvas');
+            offCanvas.style.right = (offCanvas.style.right === '0px') ? '-250px' : '0px';
+        }
+    </script>
+</body>
+</html>

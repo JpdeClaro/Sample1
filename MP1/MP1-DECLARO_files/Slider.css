@@ -1,0 +1,16 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    opacity: 0;
+   ;
+  }
+  
+  .slider img.active {
+    opacity: 1;
+  }
